@@ -1,0 +1,70 @@
+/* ================= Header ================= */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(0, 0, 0, .85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #141414;
+}
+.header .container {
+  display: flex; align-items: center; gap: 28px;
+  height: 92px;
+}
+.logo { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; letter-spacing: -.5px; }
+.logo__mark {
+  display: grid; place-items: center;
+  width: 42px; height: 42px; border-radius: 12px;
+  background: var(--yellow); color: #000;
+}
+.logo__mark svg { width: 24px; height: 24px; }
+
+.nav {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px;
+  border-radius: 22px;
+  background: #141414;
+  border: 1px solid #1e1e1e;
+}
+.nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 16px 6px 6px;
+  border-radius: 16px;
+  font-size: 15px; color: #cfcfcf;
+  transition: background .2s, color .2s;
+}
+.nav a:hover { background: #1f1f1f; color: #fff; }
+.nav__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; }
+.nav a.active { background: #262626; color: #fff; }
+.nav a.active .nav__icon { background: var(--yellow); color: #000; }
+
+.header__search {
+  flex: 1;
+  display: flex; align-items: center; gap: 10px;
+  height: 52px; padding: 0 18px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.header__search svg { color: var(--yellow); }
+.header__search input {
+  flex: 1; min-width: 0; background: none; border: 0; outline: 0;
+  font: inherit; font-size: 15px; color: #fff;
+}
+.header__search input::placeholder { color: var(--muted); }
+
+.header__user { display: flex; align-items: center; gap: 14px; }
+.avatar {
+  width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+  background:
+    url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80") center/cover,
+    linear-gradient(135deg, #b23a3a, #3b2a2a);
+  border: 2px solid #222;
+}
+.header__user .who { display: flex; flex-direction: column; line-height: 1.25; white-space: nowrap; }
+.header__user .who small { color: var(--muted); font-size: 13px; }
+.header__user .who strong { font-size: 16px; }
+.notify { position: relative; }
+.notify::after {
+  content: ""; position: absolute; top: 13px; right: 14px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--yellow); border: 2px solid var(--surface);
+}
