@@ -16,7 +16,7 @@ export default function Login() {
           <p className="muted">Log in to book your next cut</p>
         </div>
 
-        <form className="auth__form" onSubmit={submitHandler}>
+        <form className="auth__form">
           {/* {error && <p className="auth__error">{error}</p>} */}
 
           <label className="field">
@@ -29,8 +29,6 @@ export default function Login() {
                 type="email"
                 name="email"
                 placeholder="you@example.com"
-                value={values.email}
-                onChange={changeHandler}
                 autoComplete="email"
               />
             </span>
@@ -46,8 +44,6 @@ export default function Login() {
                 type="password"
                 name="password"
                 placeholder="••••••••"
-                value={values.password}
-                onChange={changeHandler}
                 autoComplete="current-password"
               />
             </span>
@@ -58,8 +54,6 @@ export default function Login() {
               <input
                 type="checkbox"
                 name="remember"
-                checked={values.remember}
-                onChange={changeHandler}
               />
               Remember me
             </label>

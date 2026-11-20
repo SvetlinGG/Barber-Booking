@@ -1,4 +1,5 @@
 import HeaderItems from "./HeaderItems";
+import Link from "react-router";
 
 export default function Header() {
     return (
@@ -61,15 +62,15 @@ export default function Header() {
         </svg>
       </button>
       {/* <div className="avatar" /> */}
-      <a href="/login" className="btn btn--ghost btn--sm">
+      <Link href="/login" className="btn btn--ghost btn--sm">
         <svg>
           <use href="#i-login" />
         </svg>
         Login
-      </a>
-      <a href="/register" className="btn btn--yellow btn--sm">
+      </Link>
+      <Link href="/register" className="btn btn--yellow btn--sm">
         Register
-      </a>
+      </Link>
 
     </div>
   </div>
