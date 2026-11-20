@@ -1,5 +1,9 @@
+import HeaderItems from "./HeaderItems";
+
 export default function Header() {
     return (
+      <>
+      <HeaderItems />
         <header className="header">
   <div className="container">
     <a href="index.html" className="logo">
@@ -64,6 +68,6 @@ export default function Header() {
     </div>
   </div>
 </header>
-
+</>
     );
 }
