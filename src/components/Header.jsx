@@ -60,11 +60,8 @@ export default function Header() {
           <use href="#i-bell" />
         </svg>
       </button>
-      <div className="avatar" />
-      <div className="who">
-        <small>Welcome</small>
-        <strong>Hay, Kelly👋</strong>
-      </div>
+      {/* <div className="avatar" /> */}
+      
     </div>
   </div>
 </header>
