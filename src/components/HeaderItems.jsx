@@ -266,6 +266,30 @@ export default function HeaderItems() {
     >
       <path d="M12 20s-8-4.8-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6.2-8 11-8 11z" />
     </symbol>
+    <symbol
+      id="i-mail"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x={3} y={5} width={18} height={14} rx={2} />
+      <path d="m3 7 9 6 9-6" />
+    </symbol>
+    <symbol
+      id="i-lock"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x={4} y={11} width={16} height={10} rx={2} />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </symbol>
   </defs>
 </svg>
 

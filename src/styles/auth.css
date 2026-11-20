@@ -1,0 +1,62 @@
+/* ================= Auth (Login / Register) ================= */
+.auth {
+  display: grid; place-items: center;
+  min-height: calc(100vh - 92px);
+  padding: 56px 16px;
+  background:
+    radial-gradient(600px 300px at 50% 0%, var(--yellow-soft), transparent 70%),
+    var(--bg);
+}
+.auth__card {
+  width: 100%; max-width: 460px;
+  padding: 40px 36px;
+}
+.auth__head { text-align: center; margin-bottom: 32px; }
+.auth__head .logo__mark { margin: 0 auto 18px; width: 56px; height: 56px; border-radius: 16px; }
+.auth__head .logo__mark svg { width: 30px; height: 30px; }
+.auth__head h1 { font-size: 28px; font-weight: 700; letter-spacing: -.5px; margin-bottom: 8px; }
+.auth__head p { font-size: 15px; }
+
+.auth__form { display: flex; flex-direction: column; gap: 18px; }
+
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field__label { font-size: 14px; color: #cfcfcf; }
+.field__control {
+  display: flex; align-items: center; gap: 10px;
+  height: 56px; padding: 0 18px;
+  border-radius: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  transition: border-color .2s, background .2s;
+}
+.field__control:focus-within { border-color: var(--yellow); background: var(--surface-3); }
+.field__control svg { color: var(--yellow); width: 20px; height: 20px; }
+.field__control input {
+  flex: 1; min-width: 0; background: none; border: 0; outline: 0;
+  font: inherit; font-size: 15px; color: #fff;
+}
+.field__control input::placeholder { color: var(--muted); }
+
+.auth__row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px;
+}
+.auth__check { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); cursor: pointer; }
+.auth__check input { accent-color: var(--yellow); width: 16px; height: 16px; }
+.auth__link { color: var(--yellow); }
+.auth__link:hover { text-decoration: underline; }
+
+.auth__error {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #ff8a8a;
+  background: rgba(255, 80, 80, .08);
+  border: 1px solid rgba(255, 80, 80, .25);
+}
+
+.auth__footer { margin-top: 26px; text-align: center; font-size: 15px; }
+
+@media (max-width: 520px) {
+  .auth__card { padding: 32px 20px; }
+}

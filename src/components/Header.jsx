@@ -61,7 +61,16 @@ export default function Header() {
         </svg>
       </button>
       {/* <div className="avatar" /> */}
-      
+      <a href="/login" className="btn btn--ghost btn--sm">
+        <svg>
+          <use href="#i-login" />
+        </svg>
+        Login
+      </a>
+      <a href="/register" className="btn btn--yellow btn--sm">
+        Register
+      </a>
+
     </div>
   </div>
 </header>
